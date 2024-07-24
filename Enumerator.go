@@ -29,7 +29,7 @@ type enumerator[T any] struct {
 }
 
 func (enumerator *enumerator[T]) Reset() {
-	enumerator.index = -1
+	enumerator.index = 0
 }
 
 func (enumerator *enumerator[T]) GetNext() (object T, ok bool) {
