@@ -73,7 +73,7 @@ func (list *List[T]) InsertRange(index int, collection IEnumerable[T]) (err erro
 
 func (list List[T]) GetEnumerator() IEnumerator[T] {
 	return &enumerator[T]{
-		index:  -1,
+		index:  0,
 		object: list,
 	}
 }
